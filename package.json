@@ -1,0 +1,15 @@
+{
+  "name": "full-stack-code-along",
+  "version": "1.0.0",
+  "description": "my first attempt at being a full stack dev",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Derek DenHartigh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
