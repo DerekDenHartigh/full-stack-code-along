@@ -26,11 +26,12 @@ angular
     template: `
         <div>
             <h2>Questions: </h2>
-                <div ng-repeat="questionItem in $ctrl.questions">
-                    <p>{{questionItem.question}}</p>
-                    <button ng-click="hide=!hide">Check Answer</button>
-                    <p ng-hide="!hide">{{questionItem.answer}}</p>
-                </div>
+            <div ng-repeat="questionItem in $ctrl.questions">
+                <p>{{questionItem.question}}</p>
+                <p ng-hide="!hide" style="background-color: red; color: blue;">{{questionItem.answer}}</p>
+                <button ng-click="hide=!hide" ng-hide="hide">Check Answer</button>
+                <button ng-click="hide=!hide" ng-hide="!hide">Hide Answer</button>
+            </div>
         </div>
         `,
     controller: QuestionListController
