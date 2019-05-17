@@ -28,8 +28,8 @@ angular
             <h2>Questions: </h2>
                 <div ng-repeat="questionItem in $ctrl.questions">
                     <p>{{questionItem.question}}</p>
-                    <button ng-click="hide=!hide">
-                    <p ng-hide="hide">{{questionItem.answer}}</p>
+                    <button ng-click="hide=!hide">Check Answer</button>
+                    <p ng-hide="!hide">{{questionItem.answer}}</p>
                 </div>
         </div>
         `,
