@@ -28,7 +28,7 @@ angular
             <h2>Questions: </h2>
             <div ng-repeat="questionItem in $ctrl.questions">
                 <p>{{questionItem.question}}</p>
-                <p ng-hide="!hide" style="background-color: red; color: blue;">{{questionItem.answer}}</p>
+                <p ng-hide="!hide" style="background-color: orange; color: blue;">{{questionItem.answer}}</p>
                 <button ng-click="hide=!hide" ng-hide="hide">Check Answer</button>
                 <button ng-click="hide=!hide" ng-hide="!hide">Hide Answer</button>
             </div>
